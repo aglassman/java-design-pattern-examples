@@ -1,0 +1,6 @@
+text: hello world
+text: test file 1
+integer: 22
+integer: 5532
+date: 11/08/1985
+integer: 2323
