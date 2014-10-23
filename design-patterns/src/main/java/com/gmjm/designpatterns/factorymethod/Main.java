@@ -18,5 +18,9 @@ public class Main {
 		CommandLine cmd = CliUtil.parse("Factory Method : ", getOptions(), args);
 		
 		
+		if(cmd == null)
+			return;
+		
+		
 	}
 }
