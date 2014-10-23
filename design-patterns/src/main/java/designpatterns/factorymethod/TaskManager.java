@@ -26,6 +26,8 @@ public class TaskManager extends JFrame {
 	
 	public TaskManager() {
 		super();
+		
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 
