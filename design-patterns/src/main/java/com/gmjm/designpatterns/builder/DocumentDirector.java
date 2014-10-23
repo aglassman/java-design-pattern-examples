@@ -5,6 +5,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -33,9 +35,9 @@ public class DocumentDirector {
 		this.docBuilder = docBuilder;
 	}
 	
-	public void construct(File input) throws IOException
+	public void construct(InputStream inputStream) throws IOException
 	{
-		BufferedReader br = new BufferedReader(new FileReader(input));
+		BufferedReader br = new BufferedReader(new InputStreamReader(inputStream));
 		
 		String line = null;
 		
