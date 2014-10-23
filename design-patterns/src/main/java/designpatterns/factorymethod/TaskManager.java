@@ -87,8 +87,11 @@ public class TaskManager extends JFrame {
 					availableTaskClasses[0]);
 			
 			try {
-				Task t = taskManager.taskFactory.createTask((Class<? extends Task>)availableTaskClasses[index]);
-				taskManager.addTask(t);
+				if(index > -1)
+				{
+					Task t = taskManager.taskFactory.createTask((Class<? extends Task>)availableTaskClasses[index]);
+					taskManager.addTask(t);
+				}
 			} catch (Exception ex) {
 				ex.printStackTrace();
 			}

@@ -13,6 +13,7 @@ public class TaskFactory {
 	
 	public TaskFactory()
 	{
+		taskFactoryClassList.add(Task.class);
 		taskFactoryClassList.add(DateSpecificTask.class);
 		taskFactoryClassList.add(PrioritizedTask.class);
 	}

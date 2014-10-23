@@ -1,7 +1,7 @@
 package designpatterns.factorymethod.task;
 
 
-public abstract class Task {
+public class Task {
 	public String taskName;
 	public String taskDescription;
 	public boolean complete = false;
