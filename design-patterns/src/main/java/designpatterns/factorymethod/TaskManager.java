@@ -75,7 +75,9 @@ public class TaskManager extends JFrame {
 		}
 
 		public void actionPerformed(ActionEvent e) {
-			Object[] availableTaskClasses = taskManager.taskFactory.getAvailableTaskClasses().toArray();
+			Object[] availableTaskClasses = taskManager.taskFactory.getAvailableTaskClasses().stream()
+					.map(clazz -> clazz.getSimpleName())
+					.toArray();
 			int index = JOptionPane.showOptionDialog(
 					taskManager, 
 					"Choose task type", 
