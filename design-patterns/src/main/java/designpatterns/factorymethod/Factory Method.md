@@ -14,7 +14,7 @@ This design pattern differs from Abstract Factory in that the factory is not cre
 ## How to run
 The following command will run this example:
 
-	`java -cp design-patterns.jar designpatterns.factorymethod.Main`
+	java -cp design-patterns.jar designpatterns.factorymethod.Main
 	
 ## Try It Out
 Pull the code, and try adding a subclass of Task with your own special modification.  Add the class to the `taskFactoryClassList` in the `TaskFactory` constructor to make it available in the "Add Task" menu options.

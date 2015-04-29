@@ -13,6 +13,6 @@ The application starts with a base `Rectangle` prototype.  You modify the base p
 ## How to run
 The following command will run this example:
 
-	`java -cp design-patterns.jar designpatterns.prototype.Main`
+	java -cp design-patterns.jar designpatterns.prototype.Main
 	
 

@@ -17,7 +17,7 @@ A better approach for using singletons is to have a singleton regristry. Instanc
 ## How to run
 The following command will run this example:
 
-	`java -cp design-patterns.jar designpatterns.singleton.Main`
+	java -cp design-patterns.jar designpatterns.singleton.Main
 	
 You can see in the system output that `FileManagerStaticInit` was created first, and getInstance did not have to be called.  Only once getInstance is called on `FileManagerGetInstanceInit` is the singleton created.  
 	
