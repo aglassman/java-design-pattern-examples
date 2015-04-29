@@ -17,7 +17,7 @@ public class Main {
 		//FileManagerStaticInit fileManagerStaticInit = new FileManagerStaticInit();
 		//FileManagerGetInstanceInit fileManagerGetInstanceInit = new FileManagerGetInstanceInit();
 		
-		FileManagerGetInstanceInit fileManager = FileManagerGetInstanceInit.getInstance();
+		FileManagerGetInstanceInit fileManager = FileManagerGetInstanceInit.getInstance("C:/myDirectory");
 		
 	}
 }

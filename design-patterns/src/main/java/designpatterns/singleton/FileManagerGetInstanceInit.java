@@ -8,32 +8,36 @@ public final class FileManagerGetInstanceInit {
 
 	private static FileManagerGetInstanceInit singleton;
 
-
+	private final String commonPrefix;
 	private final Map<String, File> fileMap = new HashMap<>();
 
-	private FileManagerGetInstanceInit() {
+	private FileManagerGetInstanceInit(String commonPrefix) {
+		this.commonPrefix = commonPrefix;
 		System.out.println("Creating FileManagerGetInstanceInit singleton.");
 	}
 
-	public static FileManagerGetInstanceInit getInstance() {
+	public static FileManagerGetInstanceInit getInstance(String commonPrefix) {
 		if(singleton == null)
-			singleton = new FileManagerGetInstanceInit();
-		
+			singleton = new FileManagerGetInstanceInit(commonPrefix);
+				
 		return singleton;
 	}
 	
 	public File getFile(String filePath) {
-		File cachedFile = fileMap.get(filePath);
+		
+		String prefixedFilePath = commonPrefix + filePath;
+		
+		File cachedFile = fileMap.get(prefixedFilePath);
 		
 		if(cachedFile != null)
 		{
 			return cachedFile;
 		}
 		
-		File file = new File(filePath);
+		File file = new File(prefixedFilePath);
 
 		if (file.exists()) {
-			fileMap.put(filePath, file);
+			fileMap.put(prefixedFilePath, file);
 			return file;
 		} 
 		
