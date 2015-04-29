@@ -12,7 +12,7 @@ This example shows how to create a few different singletons in Java.  The FileMa
 
 This is a contrived example, but you can see what kind of issues using a singleton can create.  Unless you do further protective programming another class may call getInstance with a different prefix, yet the prefix was only set on the first call.
 
-A better approach for using singletons is to have a singleton regristry. Instances of singletons are stored in a regristry.  Such a class may be a simple wrapper around an instance of Map<Class,Object>. You then retrieve an instance of a class by name.  Calling code would have to know this is the strategy, but it would ensure that all collaborating classes are using the correct object, and the lifecycle of each singleton will be easier to manage.
+A better approach for using singletons is to have a singleton regristry. Instances of singletons are stored in a regristry.  Such a class may be a simple wrapper around an instance of '''Map<Class,Object>'''. You then retrieve an instance of a class by name.  Calling code would have to know this is the strategy, but it would ensure that all collaborating classes are using the correct object, and the lifecycle of each singleton will be easier to manage.
 
 ## How to run
 The following command will run this example:
