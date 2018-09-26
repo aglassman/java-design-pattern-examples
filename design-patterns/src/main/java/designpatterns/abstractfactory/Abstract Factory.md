@@ -4,7 +4,7 @@
 
 ## Intent (From GOF book)
 
-Provide an interface for creating families of related or dependent objects without specifying thier concrete classes.
+Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
 ## Example
 
