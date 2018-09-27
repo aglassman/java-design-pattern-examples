@@ -16,6 +16,3 @@ The following command will display the command line options for this example:
 	java -cp design-patterns.jar designpatterns.creational.abstractfactory.Main -help
 	
 To exit the program, type "exit" into the input field.
-	
-
-
